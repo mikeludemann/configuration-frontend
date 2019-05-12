@@ -56,7 +56,7 @@ node_modules
 
 # Continious Integration and more #
 ###################################
-*.yml
+# *.yml
 
 # Precompiler #
 ###############
