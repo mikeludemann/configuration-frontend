@@ -1,0 +1,90 @@
+# OS Generate Files # 
+###################### 
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Desktop.ini
+
+# Jetbrain IDEs (WebStorm, PHPStorm, etc.) # 
+############################################
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Eclipse IDE #
+###############
+.project
+.externalToolBuilders/
+.settings/
+
+# SublimeText Project Files #
+#############################
+*.sublime-workspace
+*.sublime-project
+
+# Configuration of editors #
+############################
+# .editorconfig
+
+# Linter and Hinter #
+#####################
+# .jshintrc
+# .csslintrc
+# .htmlhintrc
+
+# node_modules #
+################
+/node_modules
+
+# package-lock.json #
+#####################
+package-lock.json
+
+# Tests #
+#########
+tests
+coverage
+
+# Build Tools #
+###############
+grunt
+gulp
+node_modules
+
+# Continious Integration and more #
+###################################
+*.yml
+
+# Precompiler #
+###############
+.sass-cache 
+.less-cache
+.styl-cache
+*.sourcemap
+*.css.map
+
+# Screenshots #
+###############
+build/ 
+gitinfo.json
+
+# Logs #
+########
+logs
+*.log
+npm-debug.log*
+
+# Optional: 'npm cache' directory #
+###################################
+.npm
+
+# Optional: 'eslint cache' #
+############################
+.eslintcache
+
+# Optional: 'REPL history' #
+############################
+.node_repl_history

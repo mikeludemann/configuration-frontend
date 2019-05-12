@@ -1,0 +1,31 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true
+
+[*]
+end_of_line = lf                  # Options: lf or cr or crlf
+charset = utf-8                   # Options: utf-8 or utf-16 or latin1 or ... (any other charset)
+trim_trailing_whitespace = true   # Options: true or false
+insert_final_newline = true       # Options: true or false
+indent_style = space              # Options: tabs or space
+indent_size = 2                   # Options: Integer value or tab
+# tab_width = 1                   # Options: Integer value
+max_length = off                  # Options: off or positive integer value
+
+[*.txt]
+indent_style = tab
+indent_size = 4
+
+[*.{diff,md}]
+trim_trailing_whitespace = false
+
+[*.{htm.html,css,sass,scss,less,styl,coffee,js,hbs,mustache,json}]
+indent_size = 1
+insert_final_newline = true
+indent_style = space
+
+[*.{java,php,py,c,cpp,csharp,}]
+insert_final_newline = true
+indent_style = space

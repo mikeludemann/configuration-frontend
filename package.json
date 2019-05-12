@@ -1,0 +1,62 @@
+{
+ "name": "configuration-frontend",
+ "version": "1.0.0",
+ "description": "Configuration Setup for Frontend Development",
+ "main": "index.js",
+ "scripts": {
+  "test": "npm-run-all eslint:lint tslint:lint csslint:lint htmlhint:hint jshint:hint",
+  "eslint:lint": "eslint 'src/rules/**/*'",
+  "tslint:lint": "tslint 'src/**/!(invalid).ts'",
+  "csslint:lint": "csslint '.csslintrc'",
+  "htmlhint:hint": "htmlhint '.htmlhintrc'",
+  "jshint:hint": "jshint '.jshintrc'"
+ },
+ "husky": {
+  "hooks": {
+   "pre-commit": "lint-staged"
+  }
+ },
+ "lint-staged": {
+  "*.{ts,tsx,js,jsx,json,md,css,scss}": [
+   "prettier --write",
+   "git add"
+  ]
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/mikeludemann/configuration-frontend.git"
+ },
+ "keywords": [
+  "Configuration",
+  "Config",
+  "Frontend",
+  "Front-End",
+  "Linter",
+  "Hinter",
+  "Setup"
+ ],
+ "author": "Mike Ludemann",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/mikeludemann/configuration-frontend/issues"
+ },
+ "homepage": "https://github.com/mikeludemann/configuration-frontend#readme",
+ "dependencies": {
+  "@types/mocha": "^5.2.6",
+  "@types/node": "^12.0.0",
+  "chai": "^4.2.0",
+  "csslint": "^1.0.5",
+  "eslint": "^5.16.0",
+  "htmlhint": "^0.11.0",
+  "husky": "^2.2.0",
+  "jshint": "^2.10.2",
+  "lint-staged": "^8.1.6",
+  "mocha": "^6.1.4",
+  "npm-run-all": "^4.1.5",
+  "prettier": "^1.17.0",
+  "stylelint": "^10.0.1",
+  "ts-node": "^8.1.0",
+  "tslint": "^5.16.0",
+  "typescript": "^3.4.5"
+ }
+}
